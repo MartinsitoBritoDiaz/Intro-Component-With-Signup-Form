@@ -29,18 +29,31 @@
       <div class="card__price">
         <a href="#" class="card__button">Try it free 7 days <span>then $20/mo. thereafter</span></a>
       </div>
-      <form action="" class="card__form">
-        <input type="text" class="form__field" placeholder="First Name">      </input>
-        <input type="text" class="form__field" placeholder="Last Name">      </input>
-        <input type="email" class="form__field" placeholder="Email Address">      </input>
-        <input type="password" class="form__field" placeholder="Password"></input>
+
+      <form id="form" class="card__form">
+        <input type="text" id="firstName" class="form__field" placeholder="First Name"></input>
+        <small id="smallFirstName"></small>
+
+        <input type="text" id="lastName" class="form__field" placeholder="Last Name"></input>
+        <small id="smallLastName"></small>
+       
+        <input type="text" id="email" class="form__field" placeholder="Email Address"></input>
+        <small id="smallEmail"></small>
+       
+        <input type="password" id="password" class="form__field" placeholder="Password>"></input>
+        <small id="smallPassword"></small>
+        
         <button class="form__button">Claim your free trial</button>
+
         <div class="form__footer">
           <p class="form__paragraph">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
         </div>
       </form>
+
     </div>
 
   </div>
+
+  <script src="/js/script.js"></script>
 </body>
 </html>
