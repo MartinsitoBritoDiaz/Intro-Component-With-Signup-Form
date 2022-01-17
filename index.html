@@ -3,15 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preload" href="/css/style.css" as="style">
+  <link rel="stylesheet" href="/css/style.css">
   <title>Frontend Mentor | Intro component with sign up form</title>
 
 </head>
 <body>
 
-  <main class="card">
+  <div class="card">
 
     <div class="card__header">
       <h2 class="card__title">Learn to code by watching others</h2>
@@ -21,21 +24,23 @@
       </p>
     </div>
 
-    <div class="card__price">
-      <p class="card__paragraph">Try it free 7 days then $20/mo. thereafter</p>
+    <div>
+      
+      <div class="card__price">
+        <a href="#" class="card__button">Try it free 7 days <span>then $20/mo. thereafter</span></a>
+      </div>
+      <form action="" class="card__form">
+        <input type="text" class="form__field" placeholder="First Name">      </input>
+        <input type="text" class="form__field" placeholder="Last Name">      </input>
+        <input type="email" class="form__field" placeholder="Email Address">      </input>
+        <input type="password" class="form__field" placeholder="Password"></input>
+        <button class="form__button">Claim your free trial</button>
+        <div class="form__footer">
+          <p class="form__paragraph">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+        </div>
+      </form>
     </div>
 
-    <form action="" class="card__form">
-      <input type="text" class="form__field" placeholder="First Name">      </input>
-      <input type="text" class="form__field" placeholder="Last Name">      </input>
-      <input type="email" class="form__field" placeholder="Email Address">      </input>
-      <input type="password" class="form__field"></input>
-      <button class="form__button">Claim your free trial</button>
-      <div class="form__footer">
-        <p class="form__paragraph">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
-      </div>
-    </form>
-
-  </main>
+  </div>
 </body>
 </html>
